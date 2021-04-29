@@ -6,7 +6,7 @@ labels.forEach(function(label) {
     label.innerHTML = label.innerText
 // Split transforma um texto em array
     .split('')
-// primeiro parametro 'letter' vai ter o valor original e o segundo parametro o 'index' e o array que vai ser processado de fato, assim o .map vai criar um novo array com um delay de transição de 50ms baseado na regra CSS do elemento dinamico
+// primeiro parametro 'letter' vai ter o valor original e o segundo parametro o 'index' e o array que vai ser processado de fato, assim o .map vai criar um novo array com um delay de transição de 50ms baseado na regra CSS do elemento dinamico em cada posição do array
     .map((letter,index) => 
     `<span style="transition-delay: ${index * 50}ms">${letter}</span>`
     )
